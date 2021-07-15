@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from "react";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { CharacterCard } from "./components/CharacterCard";
+
+class App extends Component {
+  state = {
+    results: [
+      {
+        id: 1,
+        name: "Ricky Sanchez",
+        status: "Alive",
+        gender: "Male",
+        species: "Human",
+        origin: {
+          name: "Earth",
+        },
+        location: {
+          name: "Earth, Replacement Universe",
+        },
+        image: "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+      },
+    ],
+  };
+
+  // componentDidMount() {
+  //   fetch(`https://rickandmortyapi.com/api/character`)
+  //     .then((response) => response.json())
+  //     .then((result) =>
+  //       this.setState({
+  //         results: result.results,
+  //       })
+  //     );
+  // }
+
+  render() {
+    return (
+      <div className="App">
+        {this.state.results.length > 0 &&
+          this.state.results.map((el) => {
+            return <CharacterCard character={el} />;
+          })}
+      </div>
+    );
+  }
 }
 
 export default App;
