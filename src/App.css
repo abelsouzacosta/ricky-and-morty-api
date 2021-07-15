@@ -19,3 +19,14 @@ body {
   grid-row-gap: 10px; /* faz o espaçamento entre linhas */
   padding: 40px;
 }
+
+.mandatory-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.bottom-buttons {
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
