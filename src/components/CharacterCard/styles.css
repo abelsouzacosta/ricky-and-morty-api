@@ -1,6 +1,7 @@
 .character-profile {
   display: flex;
   min-width: 580px;
+  max-height: 250px;
   background-color: #3c3e44;
   color: white;
   border-radius: 8px;
