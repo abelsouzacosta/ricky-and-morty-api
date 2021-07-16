@@ -24,6 +24,10 @@ class App extends Component {
     this.doApiRequest("https://rickandmortyapi.com/api/character");
   }
 
+  componentDidUpdate() {
+    window.scrollTo(0, 0);
+  }
+
   handleNextClick = () => {
     this.doApiRequest(this.state.info.next);
   };
