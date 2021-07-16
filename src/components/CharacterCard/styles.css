@@ -30,8 +30,20 @@ img {
   display: inline-block;
   border-radius: 50%;
   padding: 0.4em 0.4em;
-  background-color: greenyellow;
   margin-right: 4px;
+  background-color: transparent;
+}
+
+#Alive {
+  background-color: greenyellow;
+}
+
+#Dead {
+  background-color: red;
+}
+
+#unknown {
+  background-color: grey;
 }
 
 .character-profile__personal-info p {

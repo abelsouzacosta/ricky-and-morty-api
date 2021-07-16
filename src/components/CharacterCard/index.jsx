@@ -15,7 +15,7 @@ export const CharacterCard = ({ character }) => {
         </div>
 
         <span className="character-status">
-          <span className="status__icon"></span>
+          <span className="status__icon" id={status}></span>
           {status}
         </span>
 
