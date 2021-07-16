@@ -1,4 +1,4 @@
-# Rick and Morty API
+# Rick and Morty Landing Page
 
 ### Objetivo
 
